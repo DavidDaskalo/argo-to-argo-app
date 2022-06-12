@@ -1,1 +1,17 @@
-
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-to-argo-app-{{ template "cluster_name" . }}
+  namespace: yoav-web
+spec:
+  destination:
+    namespace: yoav-web
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: ./
+    repoURL: https://gitlab.com/yoavgit/ymhfmanifests.git
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values.yaml
