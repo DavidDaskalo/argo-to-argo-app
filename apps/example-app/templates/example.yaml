@@ -9,7 +9,7 @@ spec:
     server: https://api.restore-test.cloudlet-dev.com:6443
   project: default
   source:
-    path: ./
+    path: .
     repoURL: https://gitlab.com/yoavgit/ymhfmanifests.git
     targetRevision: HEAD
     helm:
