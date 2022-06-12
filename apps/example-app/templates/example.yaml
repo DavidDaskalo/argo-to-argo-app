@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     namespace: yoav-web
-    server: https://kubernetes.default.svc
+    server: https://api.restore-test.cloudlet-dev.com:6443
   project: default
   source:
     path: ./
