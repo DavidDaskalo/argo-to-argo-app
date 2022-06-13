@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: .
-    repoURL: https://gitlab.com/yoavgit/ymhfmanifests.git
+    repoURL: https://github.com/DavidDaskalo/argo-example-app.git
     targetRevision: HEAD
     helm:
       valueFiles:
