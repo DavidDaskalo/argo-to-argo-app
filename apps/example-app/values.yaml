@@ -1,9 +1,9 @@
 spec:
   destination:
-    server: "https://api.automation-playground.cloudlet-dev.com:6443"
-    namespace: "argo-to-argo-app"
+    server: "https://api.restore-test.cloudlet-dev.com:6443"
+    namespace: "openshift-gitops"
   source:
     repoURL: https://github.com/DavidDaskalo/argo-to-argo-app
     targetRevision: HEAD
   project: default
-argocdNamespace: argocd-managed
+argocdNamespace: openshift-gitops
