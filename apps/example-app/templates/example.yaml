@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: argo-to-argo-app-{{ template "cluster_name" . }}
-  namespace: openshift-gitops
+  namespace: yoav-web
 spec:
   destination:
     namespace: openshift-gitops
