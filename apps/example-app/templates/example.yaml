@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     namespace: openshift-gitops
-    server: https://api.restore-test.cloudlet-dev.com:6443
+    server: {{ .Values.spec.destination.server }}
   project: default
   source:
     path: .
