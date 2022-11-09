@@ -1,6 +1,6 @@
 spec:
   destination:
-    server: "https://api.restore-test.cloudlet-dev.com:6443"
+    server: https://kubernetes.default.svc
     namespace: "openshift-gitops"
   source:
     repoURL: https://github.com/DavidDaskalo/argo-to-argo-app
